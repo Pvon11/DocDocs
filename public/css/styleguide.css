@@ -1,0 +1,100 @@
+:root { 
+  --black: #000000;
+  --ebony-clay: #1e293b;
+  --jaguar: #080814;
+  --mariner: #2563eb;
+  --mercury: #e4e4e7;
+  --mirage: #0f1728;
+  --mischka: #cbd5e1;
+  --orient: #005c82;
+  --oxford-blue: #334155;
+  --perfume: #d6bbfb;
+  --pewter-blue: #94a3b8;
+  --romance: #fdfdfd;
+  --white: #ffffff;
+  --white-lilac: #f8fafc;
+ 
+  --font-size-l: 32px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+  --font-size-xl: 40px;
+  --font-size-xs: 13px;
+  --font-size-xxl: 52px;
+  --font-size-xxxl: 60px;
+ 
+  --font-family-inter: "Inter", Helvetica;
+  --font-family-moon_dance: "Moon Dance", Helvetica;
+  --font-family-poor_story: "Poor Story", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.poorstory-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-poor_story);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-normal-mirage-16px {
+  color: var(--mirage);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-semi-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.poppins-semi-bold-black-32px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.poppins-medium-jaguar-16px {
+  color: var(--jaguar);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poorstory-normal-black-40px {
+  color: var(--black);
+  font-family: var(--font-family-poor_story);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-mercury-14px {
+  color: var(--mercury);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-pewter-blue-16px {
+  color: var(--pewter-blue);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-medium-orient-40px {
+  color: var(--orient);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}

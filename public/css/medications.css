@@ -1,0 +1,144 @@
+/* screen - medications */
+
+.medications {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  height: 1003px;
+  padding: 9px 12px;
+  width: 1400px;
+}
+
+.medications .flex-row {
+  align-items: flex-start;
+  display: flex;
+  gap: 1023px;
+  height: 64px;
+  min-width: 1372px;
+}
+
+.medications .overlap-group {
+  height: 54px;
+  position: relative;
+  width: 220px;
+}
+
+.medications .title {
+  height: 28px;
+  left: 26px;
+  letter-spacing: -0.20px;
+  line-height: 28px;
+  position: absolute;
+  text-align: right;
+  top: 6px;
+  white-space: nowrap;
+  width: 194px;
+}
+
+.medications .button-primary-with-icon {
+  align-items: center;
+  align-self: flex-end;
+  background-color: var(--ebony-clay);
+  border-radius: 35px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 57px;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  width: 129px;
+}
+
+.medications .frame-1 {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+  justify-content: center;
+  margin-bottom: -1.50px;
+  margin-top: -1.50px;
+  position: relative;
+  width: fit-content;
+}
+
+.medications .button-name {
+  letter-spacing: -0.20px;
+  line-height: 28px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.medications .medications-1 {
+  align-self: center;
+  height: 39px;
+  margin-left: 55.24px;
+  margin-top: 3px;
+  width: 237px;
+}
+
+.medications .rectangle-5 {
+  background-color: var(--romance);
+  height: 49px;
+  margin-left: 49px;
+  margin-top: 3px;
+  width: 271px;
+}
+
+.medications .input-dropdown {
+  align-items: flex-start;
+  display: flex;
+  height: 44px;
+  margin-left: 40px;
+  margin-top: 39px;
+  min-width: 320px;
+}
+
+.medications .input-with-label {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  width: 320px;
+}
+
+.medications .input {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: #cfd4dc;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px #1018280d;
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  position: relative;
+}
+
+.medications .content {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: 8px;
+  position: relative;
+}
+
+.medications .text {
+  color: #667084;
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
