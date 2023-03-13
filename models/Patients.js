@@ -35,10 +35,17 @@ Patient.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    gallery_id: {
+    condition_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "gallery",
+        model: "conditions",
+        key: "id",
+      },
+    },
+    medication_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "medications",
         key: "id",
       },
     },
