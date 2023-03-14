@@ -1,3 +1,6 @@
+//how to create foreign key?
+
+
 const Users = require("./Users");
 const Conditions = require("./Conditions");
 const Patients = require("./Patients");
