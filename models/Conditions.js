@@ -32,7 +32,7 @@ Condition.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "condition",
+    modelName: "conditions",
   }
 );
 

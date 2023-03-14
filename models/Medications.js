@@ -32,7 +32,7 @@ Medicine.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "medicine",
+    modelName: "medications",
   }
 );
 
