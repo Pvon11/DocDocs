@@ -12,5 +12,10 @@ router.get("/medications", async (req, res) => {
 router.get("/patients", async (req, res) => {
   res.render("patients");
 });
+router.get('/invoice', (req, res) => {
+  res.render('billing');
+});
+
+
 
 module.exports = router;
