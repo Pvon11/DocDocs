@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600|Inter:400,500|Moon+Dance:400|Poor+Story:400");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,600|Poppins:500,600|Poor+Story:400");
 /* The following line is used to measure usage of this code in production. For more info see our usage billing page */
-@import url("https://px.animaapp.com/63f845a345c42029d2911e5d.63f845a461da27be17b6b9f5.WPaDAQi.hcp.png");
+@import url("https://px.animaapp.com/63f845a345c42029d2911e5d.63f845a461da27be17b6b9f5.n0XaANS.hcp.png");
 
 
 
@@ -23,59 +23,16 @@
   pointer-events: auto;
 }
 
-.align-self-flex-end {
-  align-self: flex-end;
-}
-
-.align-self-flex-center {
-  align-self: flex-center;
-}
-
 .valign-text-middle {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+input:focus {
+  outline: none;
+}
+
 * {
   box-sizing: border-box;
-}
-
-.doc-docs {
-  height: 28px;
-  left: 26px;
-  letter-spacing: -0.20px;
-  line-height: 28px;
-  position: absolute;
-  text-align: right;
-  top: 6px;
-  white-space: nowrap;
-  width: 194px;
-}
-
-.image-2 {
-  height: 54px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 79px;
-}
-
-.icon-search {
-  height: 20px;
-  min-width: 20px;
-  position: relative;
-}
-
-.span0 {
-  color: #64748b;
-  line-height: 22px;
-}
-
-.span1 {
-  color: var(--mariner);
-  font-size: var(--font-size-xs);
-  font-weight: 500;
-  line-height: 21px;
 }

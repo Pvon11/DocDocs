@@ -2,191 +2,154 @@
 
 .sign-in-page {
   align-items: flex-start;
-  background-color: var(--white);
+  background-color: var(--text);
   border: 1px none;
   display: flex;
-  height: 832px;
-  overflow: hidden;
-  width: 1260px;
+  width: 1446px;
 }
 
 .sign-in-page .overlap-group1 {
-  height: 835px;
-  margin-top: -2.97px;
+  height: 858px;
   position: relative;
-  width: 1289px;
-}
-
-.sign-in-page .overlap-group {
-  height: 835px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1260px;
+  width: 1446px;
 }
 
 .sign-in-page .bg {
-  background-color: var(--white-lilac);
-  height: 835px;
+  background-color: #2563eb;
+  height: 858px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 1243px;
+  width: 1446px;
 }
 
-.sign-in-page .bg-1 {
-  height: 828px;
-  left: 6px;
+.sign-in-page .overlap-group {
+  height: 858px;
+  left: 0;
   position: absolute;
-  top: 3px;
-  width: 1254px;
+  top: 0;
+  width: 1448px;
+}
+
+.sign-in-page .mask-group {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 858px;
+  position: absolute;
+  top: 0;
+  width: 1448px;
+}
+
+.sign-in-page .shape {
+  align-self: flex-start;
+  height: 117px;
+  width: 315px;
 }
 
 .sign-in-page .welcome-to-doc-docs {
-  color: var(--white);
-  font-family: var(--font-family-moon_dance);
-  font-size: var(--font-size-xxxxl);
-  font-weight: 400;
-  left: 468px;
-  letter-spacing: 10.00px;
-  line-height: 100px;
-  position: absolute;
-  text-align: center;
-  top: 33px;
-  width: 420px;
+  align-self: center;
+  height: 306px;
+  margin-left: 22.29px;
+  margin-top: 92px;
+  width: 370px;
 }
 
-.sign-in-page .input-content {
-  align-items: flex-start;
+.sign-in-page .shape-1 {
+  height: 64px;
+  margin-right: 2.0px;
+  margin-top: 279px;
+  width: 667px;
+}
+
+.sign-in-page .bg-1 {
+  height: 858px;
+  margin-right: -797px;
+  margin-top: 1447px;
+  width: 1446px;
+}
+
+.sign-in-page .title {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  left: 27px;
-  min-height: 529px;
+  gap: 608px;
+  left: 25px;
   position: absolute;
-  top: 47px;
-  width: 528px;
+  top: 128px;
+  width: 1397px;
 }
 
-.sign-in-page .sign-in {
+.sign-in-page .title-1 {
   color: var(--jaguar);
+  flex: 1;
   font-family: var(--font-family-poppins);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-l);
   font-weight: 600;
   letter-spacing: -2.00px;
   line-height: 62px;
-  margin-bottom: -4px;
-  min-height: 58px;
+  margin-top: -1.00px;
+  position: relative;
   white-space: nowrap;
 }
 
-.sign-in-page .input {
-  align-items: flex-end;
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  margin-right: 0;
-  margin-top: 140px;
-  min-height: 232px;
-  width: 516px;
-}
-
-.sign-in-page .email {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  margin-right: -1.52px;
-  min-height: 89px;
-  width: 518px;
-}
-
-.sign-in-page .email-address {
-  height: 22px;
-  letter-spacing: 0;
-  line-height: 24px;
-  margin-left: 5px;
-  white-space: nowrap;
-}
-
-.sign-in-page .bg-2 {
-  background-color: var(--white-lilac);
-  border: 1px solid;
-  border-color: var(--mischka);
-  border-radius: 12px;
-  height: 56px;
-  width: 516px;
-}
-
-.sign-in-page .password {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-right: -1.52px;
-  margin-top: 16px;
-  min-height: 88px;
-  width: 518px;
-}
-
-.sign-in-page .password-1 {
-  height: 22px;
-  letter-spacing: 0;
-  line-height: 24px;
-  margin-left: 5px;
-  white-space: nowrap;
-}
-
-.sign-in-page .bg-3 {
-  background-color: var(--white-lilac);
-  border: 1px solid;
-  border-color: var(--mischka);
-  border-radius: 12px;
-  height: 56px;
-  width: 516px;
-}
-
-.sign-in-page .forgot-password {
-  color: var(--mariner);
+.sign-in-page .create-account {
+  color: var(--text);
+  flex: 1;
   font-family: var(--font-family-poppins);
-  font-size: var(--font-size-s);
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 22px;
-  margin-bottom: -1px;
-  margin-right: 0;
-  margin-top: 19px;
-  min-height: 21px;
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  letter-spacing: -2.00px;
+  line-height: 62px;
+  margin-top: -1.00px;
+  position: relative;
   white-space: nowrap;
-  width: 124px;
+}
+
+.sign-in-page .frame-3 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  height: 732px;
+  justify-content: flex-end;
+  left: 955px;
+  padding: 40px 112px;
+  position: absolute;
+  top: 41px;
+  width: 437px;
 }
 
 .sign-in-page .button-primary-with-icon {
   align-items: center;
-  align-self: center;
-  background-color: #a5a6f6;
+  background-color: #fa4343c9;
   border-radius: 9px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 51px;
+  height: 55px;
   justify-content: center;
-  margin-right: 16.33px;
-  margin-top: 47px;
   padding: 16px;
   position: relative;
-  width: 157px;
+  width: 160px;
 }
 
 .sign-in-page .frame-1 {
+  align-items: center;
+  display: flex;
   gap: 9px;
   justify-content: center;
-  margin-bottom: -4.29px;
-  margin-top: -4.29px;
+  margin-bottom: -2.50px;
+  margin-top: -2.50px;
+  position: relative;
   width: fit-content;
 }
 
 .sign-in-page .button-name {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 600;
   letter-spacing: -0.20px;
   line-height: 28px;
   margin-top: -1.00px;
@@ -196,170 +159,208 @@
   width: fit-content;
 }
 
-.sign-in-page .input-content-1 {
+.sign-in-page .frame-5 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  left: 873px;
-  min-height: 537px;
+  height: 560px;
+  justify-content: flex-end;
+  left: 0;
+  padding: 90px 0px;
   position: absolute;
-  top: 159px;
-  width: 363px;
-}
-
-.sign-in-page .email-1 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-right: 2.0px;
-  min-height: 93px;
-  width: 361px;
-}
-
-.sign-in-page .first-last-name {
-  height: 22px;
-  letter-spacing: 0;
-  line-height: 24px;
-  white-space: nowrap;
-}
-
-.sign-in-page .bg-4 {
-  background-color: var(--white-lilac);
-  border: 1px solid;
-  border-color: var(--mischka);
-  border-radius: 35px;
-  height: 55px;
-  width: 359px;
-}
-
-.sign-in-page .input-text-style-3 {
-  height: 96px;
-  margin-right: 4.0px;
-  margin-top: 124px;
-  width: 359px;
-}
-
-.sign-in-page .input-label {
-  color: var(--black);
-  font-family: var(--font-family-poppins);
-  font-size: var(--font-size-m);
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 22px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.sign-in-page .frame-2 {
-  align-self: stretch;
-  background-color: var(--white);
-  border-radius: 35px;
-  gap: 13px;
-  height: 60px;
-  padding: 17px 22px;
-}
-
-.sign-in-page .input-text-style-4 {
-  height: 97px;
-  margin-top: 27px;
-  width: 363px;
-}
-
-.sign-in-page .frame-2-1 {
-  align-items: center;
-  align-self: stretch;
-  background-color: var(--white);
-  border-radius: 35px;
-  display: flex;
-  gap: 13px;
-  height: 60px;
-  padding: 26px 22px 17px;
-  position: relative;
+  top: 97px;
+  width: 471px;
 }
 
 .sign-in-page .button-primary-with-icon-1 {
   align-items: center;
-  background-color: #a5a6f6;
-  border-radius: 50px;
+  background-color: #3de7f2;
+  border-radius: 9px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 10px;
   height: 55px;
   justify-content: center;
-  margin-right: 1.52px;
-  margin-top: 45px;
   padding: 16px;
   position: relative;
-  width: 189px;
+  width: 160px;
 }
 
-.sign-in-page .frame-1-1 {
-  align-items: center;
-  display: flex;
-  gap: 9px;
-  justify-content: center;
-  margin-bottom: -2.44px;
-  margin-top: -2.44px;
-  position: relative;
-  width: fit-content;
-}
-
-.sign-in-page .input-text-style-4-1 {
+.sign-in-page .input-with-label {
   align-items: flex-start;
-  border-radius: 35px;
+  background-color: var(--text);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 98px;
-  justify-content: center;
-  left: 873px;
+  gap: 6px;
+  left: 34px;
   position: absolute;
-  top: 240px;
-  width: 416px;
+  top: 408px;
+  width: 396px;
 }
 
-.sign-in-page .input-label-1 {
-  color: #030303;
-  font-family: var(--font-family-poppins);
-  font-size: var(--font-size-m);
-  font-weight: 400;
+.sign-in-page .input {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--desert-storm);
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 4px #f4ebff , 0px 1px 2px #1018280d;
+  display: flex;
+  gap: 8px;
+  overflow: hidden;
+  padding: 10px 14px;
+  position: relative;
+}
+
+.sign-in-page .content {
+  align-items: center;
+  background-color: var(--desert-storm);
+  display: flex;
+  flex: 1;
+  gap: 8px;
+  position: relative;
+}
+
+.sign-in-page .password {
+  background-color: transparent;
+  border: 0;
+  flex: 1;
+  height: 24px;
   letter-spacing: 0;
-  line-height: 22px;
+  line-height: 24px;
+  margin-top: -1.00px;
+  min-width: 368px;
+  padding: 0;
   position: relative;
   white-space: nowrap;
-  width: fit-content;
 }
 
-.sign-in-page .bg-5 {
-  height: 55px;
-  left: 871px;
-  position: absolute;
-  top: 311px;
-  width: 363px;
+.sign-in-page .password::placeholder {
+  color: #08081499;
+}
+
+.sign-in-page .input-with-label-1 {
+  left: 34px;
+  top: 290px;
+}
+
+.sign-in-page .text {
+  background-color: transparent;
+  border: 0;
+  flex: 1;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1.00px;
+  min-width: 368px;
+  padding: 0;
+  position: relative;
+  white-space: nowrap;
+}
+
+.sign-in-page .text::placeholder {
+  color: #08081499;
+}
+
+.sign-in-page .input-with-label-2 {
+  left: 1022px;
+  top: 379px;
 }
 
 .sign-in-page .text-1 {
-  color: #adaaaa;
-  font-family: var(--font-family-poppins);
-  font-size: var(--font-size-m);
-  font-weight: 400;
-  height: 22px;
-  left: 894px;
+  background-color: transparent;
+  border: 0;
+  flex: 1;
+  height: 24px;
   letter-spacing: 0;
-  line-height: 22px;
-  position: absolute;
-  top: 331px;
+  line-height: 24px;
+  margin-top: -1.00px;
+  min-width: 368px;
+  padding: 0;
+  position: relative;
   white-space: nowrap;
 }
 
-.sign-in-page .input-text-style {
+.sign-in-page .text-1::placeholder {
+  color: #08081499;
+}
+
+.sign-in-page .input-with-label-3 {
+  left: 1022px;
+  top: 484px;
+}
+
+.sign-in-page .text-2 {
+  background-color: transparent;
+  border: 0;
+  flex: 1;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1.00px;
+  min-width: 368px;
+  padding: 0;
+  position: relative;
+  white-space: nowrap;
+}
+
+.sign-in-page .text-2::placeholder {
+  color: #08081499;
+}
+
+.sign-in-page .input-with-label-4 {
+  left: 1022px;
+  top: 285px;
+}
+
+.sign-in-page .text-3 {
+  background-color: transparent;
+  border: 0;
+  flex: 1;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1.00px;
+  min-width: 368px;
+  padding: 0;
+  position: relative;
+  white-space: nowrap;
+}
+
+.sign-in-page .text-3::placeholder {
+  color: #08081499;
+}
+
+.sign-in-page .input-with-label-5 {
+  left: 1022px;
+  top: 578px;
+}
+
+.sign-in-page .create-password {
+  background-color: transparent;
+  border: 0;
+  flex: 1;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1.00px;
+  min-width: 368px;
+  padding: 0;
+  position: relative;
+  white-space: nowrap;
+}
+
+.sign-in-page .create-password::placeholder {
+  color: #08081499;
+}
+
+.sign-in-page .input-with-label-6 {
   align-items: flex-start;
-  border-radius: 35px;
+  background-color: var(--text);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  position: relative;
+  gap: 6px;
+  position: absolute;
+  width: 396px;
 }
