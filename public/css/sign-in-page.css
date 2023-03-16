@@ -5,46 +5,66 @@
   background-color: var(--white);
   border: 1px none;
   display: flex;
-  width: 1280px;
+  height: 832px;
+  overflow: hidden;
+  width: 1260px;
 }
 
-.sign-in-page .x3 {
-  align-items: center;
-  background-color: var(--white-lilac);
-  display: flex;
-  gap: 63px;
-  min-width: 1280px;
+.sign-in-page .overlap-group1 {
+  height: 835px;
+  margin-top: -2.97px;
+  position: relative;
+  width: 1289px;
 }
 
 .sign-in-page .overlap-group {
-  align-items: flex-start;
-  background-image: url(../img/bg.png);
-  background-size: 100% 100%;
-  display: flex;
-  height: 832px;
-  min-width: 571px;
-  padding: 71.5px 55.1px;
+  height: 835px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1260px;
+}
+
+.sign-in-page .bg {
+  background-color: var(--white-lilac);
+  height: 835px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1243px;
+}
+
+.sign-in-page .bg-1 {
+  height: 828px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  width: 1254px;
 }
 
 .sign-in-page .welcome-to-doc-docs {
   color: var(--white);
   font-family: var(--font-family-moon_dance);
-  font-size: 96px;
+  font-size: var(--font-size-xxxxl);
   font-weight: 400;
+  left: 468px;
   letter-spacing: 10.00px;
   line-height: 100px;
-  min-height: 406px;
+  position: absolute;
   text-align: center;
-  width: 348px;
+  top: 33px;
+  width: 420px;
 }
 
 .sign-in-page .input-content {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin-bottom: 21.12px;
-  min-height: 564px;
-  width: 560px;
+  left: 27px;
+  min-height: 529px;
+  position: absolute;
+  top: 47px;
+  width: 528px;
 }
 
 .sign-in-page .sign-in {
@@ -54,8 +74,8 @@
   font-weight: 600;
   letter-spacing: -2.00px;
   line-height: 62px;
-  margin-bottom: -5px;
-  min-height: 57px;
+  margin-bottom: -4px;
+  min-height: 58px;
   white-space: nowrap;
 }
 
@@ -64,37 +84,37 @@
   align-self: flex-end;
   display: flex;
   flex-direction: column;
-  margin-right: 2.0px;
-  margin-top: 139px;
-  min-height: 230px;
-  width: 546px;
+  margin-right: 0;
+  margin-top: 140px;
+  min-height: 232px;
+  width: 516px;
 }
 
 .sign-in-page .email {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-right: -0.96px;
-  min-height: 88px;
-  width: 547px;
+  gap: 9px;
+  margin-right: -1.52px;
+  min-height: 89px;
+  width: 518px;
 }
 
 .sign-in-page .email-address {
   height: 22px;
   letter-spacing: 0;
   line-height: 24px;
+  margin-left: 5px;
   white-space: nowrap;
 }
 
-.sign-in-page .bg {
+.sign-in-page .bg-2 {
   background-color: var(--white-lilac);
   border: 1px solid;
   border-color: var(--mischka);
   border-radius: 12px;
   height: 56px;
-  margin-left: 0;
-  width: 545px;
+  width: 516px;
 }
 
 .sign-in-page .password {
@@ -102,27 +122,27 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-right: -0.96px;
-  margin-top: 15px;
+  margin-right: -1.52px;
+  margin-top: 16px;
   min-height: 88px;
-  width: 547px;
+  width: 518px;
 }
 
 .sign-in-page .password-1 {
   height: 22px;
   letter-spacing: 0;
   line-height: 24px;
+  margin-left: 5px;
   white-space: nowrap;
 }
 
-.sign-in-page .bg-1 {
+.sign-in-page .bg-3 {
   background-color: var(--white-lilac);
   border: 1px solid;
   border-color: var(--mischka);
   border-radius: 12px;
   height: 56px;
-  margin-left: 0;
-  width: 545px;
+  width: 516px;
 }
 
 .sign-in-page .forgot-password {
@@ -132,17 +152,18 @@
   font-weight: 400;
   letter-spacing: 0;
   line-height: 22px;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
   margin-right: 0;
   margin-top: 19px;
-  min-height: 20px;
+  min-height: 21px;
   white-space: nowrap;
-  width: 130px;
+  width: 124px;
 }
 
 .sign-in-page .button-primary-with-icon {
   align-items: center;
-  background-color: var(--mariner);
+  align-self: center;
+  background-color: #a5a6f6;
   border-radius: 9px;
   cursor: pointer;
   display: flex;
@@ -150,21 +171,18 @@
   gap: 10px;
   height: 51px;
   justify-content: center;
-  margin-left: 12.43px;
-  margin-top: 49px;
+  margin-right: 16.33px;
+  margin-top: 47px;
   padding: 16px;
   position: relative;
-  width: 166px;
+  width: 157px;
 }
 
 .sign-in-page .frame-1 {
-  align-items: center;
-  display: flex;
   gap: 9px;
   justify-content: center;
-  margin-bottom: -4.52px;
-  margin-top: -4.52px;
-  position: relative;
+  margin-bottom: -4.29px;
+  margin-top: -4.29px;
   width: fit-content;
 }
 
@@ -178,16 +196,170 @@
   width: fit-content;
 }
 
-.sign-in-page .dont-have-an-accoun {
-  color: transparent;
-  cursor: pointer;
-  font-family: var(--font-family-poppins);
-  font-size: var(--font-size-s);
-  font-weight: 400;
-  height: 19px;
+.sign-in-page .input-content-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 873px;
+  min-height: 537px;
+  position: absolute;
+  top: 159px;
+  width: 363px;
+}
+
+.sign-in-page .email-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-right: 2.0px;
+  min-height: 93px;
+  width: 361px;
+}
+
+.sign-in-page .first-last-name {
+  height: 22px;
   letter-spacing: 0;
-  line-height: 14px;
-  margin-left: 12.44px;
-  margin-top: 19px;
-  width: 314px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.sign-in-page .bg-4 {
+  background-color: var(--white-lilac);
+  border: 1px solid;
+  border-color: var(--mischka);
+  border-radius: 35px;
+  height: 55px;
+  width: 359px;
+}
+
+.sign-in-page .input-text-style-3 {
+  height: 96px;
+  margin-right: 4.0px;
+  margin-top: 124px;
+  width: 359px;
+}
+
+.sign-in-page .input-label {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.sign-in-page .frame-2 {
+  align-self: stretch;
+  background-color: var(--white);
+  border-radius: 35px;
+  gap: 13px;
+  height: 60px;
+  padding: 17px 22px;
+}
+
+.sign-in-page .input-text-style-4 {
+  height: 97px;
+  margin-top: 27px;
+  width: 363px;
+}
+
+.sign-in-page .frame-2-1 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--white);
+  border-radius: 35px;
+  display: flex;
+  gap: 13px;
+  height: 60px;
+  padding: 26px 22px 17px;
+  position: relative;
+}
+
+.sign-in-page .button-primary-with-icon-1 {
+  align-items: center;
+  background-color: #a5a6f6;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 55px;
+  justify-content: center;
+  margin-right: 1.52px;
+  margin-top: 45px;
+  padding: 16px;
+  position: relative;
+  width: 189px;
+}
+
+.sign-in-page .frame-1-1 {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+  justify-content: center;
+  margin-bottom: -2.44px;
+  margin-top: -2.44px;
+  position: relative;
+  width: fit-content;
+}
+
+.sign-in-page .input-text-style-4-1 {
+  align-items: flex-start;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 98px;
+  justify-content: center;
+  left: 873px;
+  position: absolute;
+  top: 240px;
+  width: 416px;
+}
+
+.sign-in-page .input-label-1 {
+  color: #030303;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.sign-in-page .bg-5 {
+  height: 55px;
+  left: 871px;
+  position: absolute;
+  top: 311px;
+  width: 363px;
+}
+
+.sign-in-page .text-1 {
+  color: #adaaaa;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: 22px;
+  left: 894px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 331px;
+  white-space: nowrap;
+}
+
+.sign-in-page .input-text-style {
+  align-items: flex-start;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
 }
