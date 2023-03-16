@@ -4,7 +4,7 @@
     <meta charset="utf-8" /> --}}
     <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
     <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
-    {{!-- <meta name="viewport" content="width=1260, maximum-scale=1.0" />
+    {{!-- <meta name="viewport" content="width=1446, maximum-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
     <meta name="og:type" content="website" />
     <meta name="twitter:card" content="photo" />
@@ -15,67 +15,138 @@
   <body style="margin: 0; background: #ffffff"> --}}
     <input type="hidden" id="anPageName" name="page" value="sign-in-page" />
     <div class="container-center-horizontal">
-      <div class="sign-in-page screen">
+      <form class="sign-in-page screen" name="form2" action="form2" method="post">
         <div class="overlap-group1">
-          <div class="overlap-group">
-            <div class="bg"></div>
-            <img class="bg-1" src="img/bg-1.png" alt="BG" />
-            <h1 class="welcome-to-doc-docs">Welcome <br /><br />to <br /><br />DocDocs!</h1>
-            <div class="input-content">
-              <div class="sign-in">Sign In</div>
-              <div class="input">
-                <input type="text">
-                <div class="password">
-                  <div class="password-1 valign-text-middle poppins-medium-jaguar-16px">Password</div>
-                  <input type="text">
-                  <div class="bg-2"></div>
-                </div>
-                <div class="forgot-password">Forgot password?</div>
+          <div class="bg">
+            <div class="overlap-group">
+              <div class="mask-group">
+                <img class="shape" src="img/shape.svg" alt="shape" />
+                <img class="welcome-to-doc-docs" src="img/welcome-to-docdocs.svg" alt="Welcome to DocDocs" />
+                <img class="shape-1" src="img/shape-1.svg" alt="shape" />
+                <img class="bg-1" src="img/bg.png" alt="BG" />
               </div>
-              <a href="homepage.html" class="align-self-flex-center">
+              <div class="title">
+                <h1 class="title-1">Login</h1>
+                <div class="create-account">Create Account</div>
+              </div>
+            </div>
+            <div class="frame-3">
+              <a href="javascript:SubmitForm('form2')">
                 <div class="button-primary-with-icon">
-                  <div class="frame-1 frame">
-                    <div class="button-name valign-text-middle poppins-semi-bold-white-16px">Sign in</div>
-                  </div>
+                  <div class="frame-1"><div class="button-name valign-text-middle">Sign Up</div></div>
+                </div></a
+              >
+            </div>
+            <div class="frame-5">
+              <a href="javascript:SubmitForm('form2')">
+                <div class="button-primary-with-icon-1">
+                  <div class="frame-1"><div class="button-name valign-text-middle">Sign in</div></div>
                 </div></a
               >
             </div>
           </div>
-          <div class="input-content-1">
-            <div class="email-address valign-text-middle poppins-normal-black-16px">Email Address</div>
-            <div class="flex-col">
-              <div class="email">
-                <div class="first-last-name valign-text-middle poppins-medium-jaguar-16px">First &amp; Last Name</div>
-                <div class="bg-3"></div>
-              </div>
-              <div class="input-text-style-3 input-text-style">
-                <div class="input-label valign-text-middle poppins-normal-black-16px">Email Address</div>
-                <div class="frame-2 frame">
-                  <div class="enter-email-to-get-started valign-text-middle poppins-normal-pewter-blue-16px">
-                    i.e. davon@mail.com
-                  </div>
-                </div>
-              </div>
-              <div class="input-text-style-4 input-text-style">
-                <div class="input-label valign-text-middle poppins-normal-black-16px">Create Password</div>
-                <div class="frame-2-1">
-                  <div class="enter-email-to-get-started-1 valign-text-middle poppins-normal-pewter-blue-16px">
-                    **********
-                  </div>
-                </div>
-              </div>
-              <div class="button-primary-with-icon-1">
-                <div class="frame-1-1">
-                  <div class="button-name valign-text-middle poppins-semi-bold-white-16px">Create Account</div>
-                </div>
+          <div class="input-with-label">
+            <div class="input">
+              <div class="content">
+                <input
+                  class="password poppins-medium-jaguar-16px"
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                  required
+                />
               </div>
             </div>
           </div>
-          <div class="input-text-style-4-1"><div class="input-label-1 valign-text-middle">License number</div></div>
-          <img class="bg-4" src="img/bg.svg" alt="BG" />
-          <div class="text-1 valign-text-middle">************</div>
+          <div class="input-with-label-1 input-with-label-6">
+            <div class="input">
+              <div class="content">
+                <input
+                  class="text poppins-medium-jaguar-16px"
+                  name="text"
+                  placeholder="Email address"
+                  type="email"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="input-with-label-2 input-with-label-6">
+            <div class="input">
+              <div class="content">
+                <input
+                  class="text-1 poppins-medium-jaguar-16px"
+                  name="text"
+                  placeholder="License Number"
+                  type="number"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="input-with-label-3 input-with-label-6">
+            <div class="input">
+              <div class="content">
+                <input
+                  class="text-2 poppins-medium-jaguar-16px"
+                  name="text"
+                  placeholder="Email address"
+                  type="email"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="input-with-label-4 input-with-label-6">
+            <div class="input">
+              <div class="content">
+                <input
+                  class="text-3 poppins-medium-jaguar-16px"
+                  name="text"
+                  placeholder="First & Last Name"
+                  type="text"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="input-with-label-5 input-with-label-6">
+            <div class="input">
+              <div class="content">
+                <input
+                  class="create-password poppins-medium-jaguar-16px"
+                  name="createpassword"
+                  placeholder="Password"
+                  type="password"
+                  required
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
+    <script>
+      /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+      if (!HTMLFormElement.prototype.reportValidity) {
+        HTMLFormElement.prototype.reportValidity = function () {
+          if (this.checkValidity()) return true;
+          var btn = document.createElement("button");
+          this.appendChild(btn);
+          btn.click();
+          this.removeChild(btn);
+          return false;
+        };
+      }
+
+      function SubmitForm(form_name) {
+        var form = document.getElementsByName(form_name)[0];
+        if (form.reportValidity()) {
+          form.submit();
+          if (window.submitted) window.submitted();
+        }
+      }
+    </script>
   </body>
 </html>
