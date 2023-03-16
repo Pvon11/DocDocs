@@ -19,14 +19,14 @@ Patient.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    medical_conditions: {
-      type: DataTypes.DATE,
-      allowNull: true,
-    },
-    medications: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
+    // medical_conditions: {
+    //   type: DataTypes.DATE,
+    //   allowNull: true,
+    // },
+    // medications: {
+    //   type: DataTypes.STRING,
+    //   allowNull: true,
+    // },
     invoice: {
       type: DataTypes.STRING,
       allowNull: true,

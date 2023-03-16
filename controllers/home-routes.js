@@ -1,6 +1,6 @@
 const router = require("express").Router();
 router.get("/", async (req, res) => {
-  res.render("homepage");
+  res.render("sign-in-page");
 });
 
 router.get("/conditions", async (req, res) => {
@@ -12,10 +12,11 @@ router.get("/medications", async (req, res) => {
 router.get("/patients", async (req, res) => {
   res.render("patients");
 });
-router.get('/invoice', (req, res) => {
-  res.render('billing');
+router.get("/invoice", (req, res) => {
+  res.render("billing");
 });
-
-
+router.get("/homepage", (req, res) => {
+  res.render("homepage");
+});
 
 module.exports = router;
