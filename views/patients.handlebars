@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/globals.css" />
   </head>
   <body style="margin: 0; background: #ffffff"> -->
-    <input type="hidden" id="anPageName" name="page" value="patients" />
+    {{!-- <input type="hidden" id="anPageName" name="page" value="patients" />
     <div class="container-center-horizontal">
       <div class="patients screen">
         <div class="flex-row">
@@ -31,8 +31,8 @@
               </div>
             </div></a
           >
-        </div>
-        <div class="flex-row-1">
+        </div> --}}
+        {{!-- <div class="flex-row-1">
           <div class="overlap-group1">
             <div class="rectangle-5"></div>
             <a href="#asset-44">
@@ -80,21 +80,98 @@
                   </div>
                 </div>
               </div></a
-            >
-            <div class="input">
-              <div class="content">
-                <img class="icon-search" src="img/search.svg" alt="icon-search" />
-                <div class="text inter-normal-mirage-16px">Patient Search</div>
-              </div>
-            </div>
-            <div class="input">
-              <div class="content">
+            > --}}
+
+            <form class="form" id="signin-form">
+            <div class="rectangle-5"></div>
+            <div class="input-with-label">
+              <input 
+                
+                  class="input poppins-medium-jaguar-16px"
+                  id="patient-search"
+                  name="patient"
+                  placeholder="Search Patient"
+                
+                />
                 <img class="icon-search-1" src="img/search.svg" alt="icon-search" />
-                <div class="text inter-normal-mirage-16px">Patient Search</div>
+                <button class="button-name valign-text-middle" type="submit" id="signin-form">Search for Patients</button>
               </div>
             </div>
           </div>
-          <div class="asset-container">
+          </form>
+
+         {{!-- create patient --}}
+
+            <form class="form" id="signin-form">
+            <div class="rectangle-5"></div>
+            <div class="input">
+              <input 
+                
+                  class="input poppins-medium-jaguar-16px"
+                  id="patient-name"
+                  name="patient"
+                  placeholder="Patient name"
+                  type="text"
+                
+                />
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-5"></div>
+            <div class="input">
+              <input 
+                
+                  class="input poppins-medium-jaguar-16px"
+                  id="date-of-birth"
+                  name="text"
+                  placeholder="Date of Birth"
+                  type="text"
+                  
+                
+                />
+                <div class="rectangle-5"></div>
+            <div class="input">
+              <input 
+                
+                  class="input poppins-medium-jaguar-16px"
+                  id="patient-invoice"
+                  name="invoice"
+                  placeholder="Invoice"
+                  type="text"
+                
+                />
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-5"></div>
+            <div class="input">
+              <input 
+                
+                  class="input poppins-medium-jaguar-16px"
+                  id="patient-name"
+                  name="notes"
+                  placeholder="Notes"
+                  type="text"
+                
+                />
+              </div>
+            </div>
+          </div>
+          <div class="button-primary-with-icon"></div>
+          <button class="button-name valign-text-middle" type="submit" id="signup-form">Create Patient</button>
+
+          </form>
+
+          {{!-- Placeholder spot --}}
+
+          <div>Temporary</div>
+
+
+
+            
+            
+          
+          {{!-- <div class="asset-container">
             <a href="#rectangle-6"><img class="asset-44" id="asset-44" src="img/asset-44.svg" alt="Asset 44" /> </a
             ><a href="#rectangle-8"><img class="asset-47" src="img/asset-47.svg" alt="Asset 47" /> </a
             ><a href="#rectangle-9"><img class="asset-48" src="img/asset-48.svg" alt="Asset 48" /> </a
@@ -147,6 +224,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
   </body>
 </html>
