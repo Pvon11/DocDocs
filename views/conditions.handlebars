@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/globals.css" />
   </head>
   <body style="margin: 0; background: #ffffff"> -->
-    <input type="hidden" id="anPageName" name="page" value="conditions" />
+    {{!-- <input type="hidden" id="anPageName" name="page" value="conditions" />
     <div class="container-center-horizontal">
       <div class="conditions screen">
         <div class="flex-row">
@@ -29,17 +29,115 @@
               </div>
             </div></a
           >
-        </div>
+        </div> --}}
+
+        <form class="form" id="signin-form">
         <div class="rectangle-5"></div>
         <div class="input-with-label">
-          <div class="input">
-            <div class="content">
-              <img class="search" src="" alt="search" />
-              <div class="text inter-normal-mirage-16px">Condition Search</div>
-            </div>
-          </div>
+          <input 
+                
+                  class="input poppins-medium-jaguar-16px"
+                  id="condition-search"
+                  name="condition"
+                  placeholder="Enter condition here"
+                
+                />
+          
+          <button class="button-name valign-text-middle" type="submit" id="signin-form">Search for conditions</button>
         </div>
       </div>
     </div>
+    </form>
+
+    <form class="form" id="signin-form">
+            <div class="rectangle-5"></div>
+            <div class="input">
+              <input 
+                
+                  class="input poppins-medium-jaguar-16px"
+                  id="condition-name"
+                  name="conditions"
+                  placeholder="Conditions"
+                  type="text"
+                
+                />
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-5"></div>
+            <div class="input">
+              <input 
+                
+                  class="input poppins-medium-jaguar-16px"
+                  id="condition-description"
+                  name="condition-description"
+                  placeholder="Description"
+                  type="text"
+                  
+                
+                />
+                <div class="rectangle-5"></div>
+            <div class="input">
+              <input 
+                
+                  class="input poppins-medium-jaguar-16px"
+                  id="symptom-type"
+                  name="symptom"
+                  placeholder="Symptoms"
+                  type="text"
+                
+                />
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-5"></div>
+            <div class="input">
+              <input 
+                
+                  class="input poppins-medium-jaguar-16px"
+                  id="treatment-name"
+                  name="treatment"
+                  placeholder="Treatment"
+                  type="text"
+                
+                />
+              </div>
+            </div>
+          </div>
+          <div class="button-primary-with-icon"></div>
+          <button class="button-name valign-text-middle" type="submit" id="signup-form">Create Patient</button>
+
+          {{!-- Add to patient --}}
+
+          </form>
+           <form class="form" id="signin-form">
+        
+        <div class="rectangle-5"></div>
+        <div class="input-dropdown">
+          <div class="input-with-label">
+            
+            <input
+          class="input poppins-medium-jaguar-16px"
+                  id="condition-name"
+                  name="condition-name"
+                  placeholder="Condition name"
+                  type="text"
+            
+            />
+            <div class="rectangle-5"></div>
+        <div class="input-dropdown">
+          <div class="input-with-label">
+            
+            <input
+          class="input poppins-medium-jaguar-16px"
+                  id="patient-name"
+                  name="patient-name"
+                  placeholder="Patient name"
+                  type="text"
+            
+            />
+              
+               
+                <button class="button-name valign-text-middle" type="submit" id="signin-form">Add to Patient</button>
   </body>
 </html>
