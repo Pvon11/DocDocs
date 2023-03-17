@@ -27,6 +27,7 @@ async function handleSignup(event) {
 
   if (response.ok) {
     console.log("IT WORKED!");
+    document.location.replace("/homepage");
   } else {
     console.log("Dan, you screwed it up again");
   }
@@ -37,8 +38,8 @@ async function handleSignup(event) {
 async function handleLogin(event) {
   event.preventDefault();
 
-  const emailValue = document.getElementById("email-login").value.trim();
-  const passwordValue = document.getElementById("password-login").value.trim();
+  const emailValue = document.getElementById("email-signin").value.trim();
+  const passwordValue = document.getElementById("password-signin").value.trim();
 
   const loginUser = {
     email: emailValue,
@@ -55,11 +56,10 @@ async function handleLogin(event) {
 
   if (response.ok) {
     console.log("IT WORKED!");
+    document.location.replace("/homepage");
   } else {
     console.log("Dan, you screwed it up again");
   }
-
-  loginForm.reset();
 }
 
 signupForm.addEventListener("submit", handleSignup);
