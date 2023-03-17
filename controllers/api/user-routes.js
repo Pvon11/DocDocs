@@ -7,11 +7,11 @@
 //module.exports = router;
 const router = require("express").Router();
 
-const User = require("../../models");
+const { Users } = require("../../models");
 
 router.post("/login", async (req, res) => {
   try {
-    const dbUser = await User.findOne({
+    const dbUser = await Users.findOne({
       where: {
         email: req.body.email,
       },
@@ -21,7 +21,7 @@ router.post("/login", async (req, res) => {
       return res.status(404).json({ message: "No access" });
     }
 
-    const isValidPassword = await dbUser.comparePassword(req.body.password);
+    const isValidPassword = await dbUser.checkPassword(req.body.password);
 
     if (!isValidPassword) {
       return res.status(404).json({ message: "Wrong password" });
@@ -32,6 +32,7 @@ router.post("/login", async (req, res) => {
       return res.status(200).json({ message: "Welcome!" });
     });
   } catch (error) {
+    console.log(error);
     return res.status(500).json({ message: "Incorrect" });
   }
 });
@@ -39,7 +40,7 @@ router.post("/login", async (req, res) => {
 router.post("/signup", async (req, res) => {
   console.log("signup");
   try {
-    const dbUser = await User.create(req.body);
+    const dbUser = await Users.create(req.body);
     const plainUser = dbUser.get({ plain: true });
 
     req.session.save(() => {
@@ -47,6 +48,7 @@ router.post("/signup", async (req, res) => {
       res.status(201).json(plainUser);
     });
   } catch (error) {
+    console.log(error);
     res.status(500).json({ message: "Incorrect" });
   }
 });
