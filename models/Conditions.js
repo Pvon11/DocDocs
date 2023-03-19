@@ -14,6 +14,7 @@ Condition.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
     },
     description: {
       type: DataTypes.STRING,
@@ -32,7 +33,7 @@ Condition.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "conditions",
+    modelName: "condition",
   }
 );
 
