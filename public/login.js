@@ -26,10 +26,10 @@ async function handleSignup(event) {
   });
 
   if (response.ok) {
-    console.log("IT WORKED!");
+    console.log("Nice!");
     document.location.replace("/homepage");
   } else {
-    console.log("Dan, you screwed it up again");
+    console.log("Fetch Failed");
   }
 
   signupForm.reset();
@@ -55,10 +55,10 @@ async function handleLogin(event) {
   });
 
   if (response.ok) {
-    console.log("IT WORKED!");
+    console.log("Nice!");
     document.location.replace("/homepage");
   } else {
-    console.log("Dan, you screwed it up again");
+    console.log("Fetch Failed");
   }
 }
 
