@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection");
+const { sequelize } = require("../config/connection");
 
 class Patient extends Model {}
 
@@ -19,14 +19,7 @@ Patient.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // medical_conditions: {
-    //   type: DataTypes.DATE,
-    //   allowNull: true,
-    // },
-    // medications: {
-    //   type: DataTypes.STRING,
-    //   allowNull: true,
-    // },
+
     invoice: {
       type: DataTypes.STRING,
       allowNull: true,
@@ -38,7 +31,7 @@ Patient.init(
     condition_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "conditions",
+        model: "condition",
         key: "id",
       },
     },
