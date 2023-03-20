@@ -1,65 +1,63 @@
 
 
     
-      <div class="wrappermain">
+    <div class="wrappermain">
       <div class="wrapper">
-
-        <form class="form" id="signin-form">
         
+        <form class="form">
         
-        
-          <div class="input-with-label">
+          <div class="input">
+            <div class="mb3">
             
               <input
                   
-                  class="input"
-                  id="medication-search"
-                  name="medication"
-                  placeholder="Medication Name"
+                class="form-control"
+                id="medication-search"
+                name="medication"
+                placeholder="Medication Name"
             
-                />
+              />
               
                
-                <button class="btn btn-primary my-1" type="submit" id="signin-form">Search for Medications</button>
+                <button class="btn btn-primary my-1" type="submit">Search for Medications</button>
               
-              </div>
-          
-      
-    
+            </div>
+          </div>
         </form>
 
-        <form class="form" id="signin-form">
+        <form class="form">
             
             <div class="input">
-              <input 
+              <div class="mb3">
+                <input 
                 
-                  class="input"
+                  class="form-control"
                   id="medication-name"
                   name="medication"
                   placeholder="Medications"
                   type="text"
-                
                 />
               </div>
+            </div>
             
           
           
             <div class="input">
-              <input 
-                
-                  class="input"
+              <div class="mb3">
+                <input 
+                  class="form-control"
                   id="medication-description"
                   name="description"
                   placeholder="Description"
                   type="text"
-                  
-                
                 />
+              </div>
+            </div>
                 
             <div class="input">
-              <input 
-                
-                  class="input"
+              <div class="mb3">
+               <input 
+                  class="form-control"
                   id="usage-type"
                   name="usage"
                   placeholder="Usage information"
@@ -71,9 +69,10 @@
           
           
             <div class="input">
-              <input 
+              <div class="mb3">
+                <input 
                 
-                  class="input"
+                  class="form-control"
                   id="treatment-name"
                   name="treatment"
                   placeholder="Treatment"
@@ -81,40 +80,47 @@
                 
                 />
               </div>
+            </div>
             
-            <button class="btn btn-primary my-1" type="submit" id="signup-form">Create Medication</button>
+            <button class="btn btn-primary my-1" type="submit">Create Medication</button>
 
           {{!-- Add to patient --}}
 
-          </form>
-           <form class="form" id="signin-form">
+        </form>
+           
+          <form class="form">
         
         
-        <div class="input-dropdown">
-          <div class="input-with-label">
+            <div class="input">
+            <div class="mb3">
             
             <input
-          class="input"
-                  id="medication-name"
-                  name="medication-name"
-                  placeholder="Medication Name"
-                  type="text"
+              class="form-control"
+              id="medication-name"
+              name="medication-name"
+              placeholder="Medication Name"
+              type="text"
             
             />
             
-        <div class="input-dropdown">
-          <div class="input-with-label">
+            <div class="input">
+              <div class="mb3">
             
-            <input
-          class="input"
+                <input
+                  class="form-control"
                   id="patient-name"
                   name="patient-name"
                   placeholder="Patient Name"
                   type="text"
             
-            />
+                />
+              </div>
+            </div>
               
                
                 <button class="btn btn-primary my-1" type="submit" id="signin-form">Add to Patients</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

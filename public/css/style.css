@@ -6,6 +6,15 @@ body {
   background-color: beige;
 }
 
+.title {
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  text-align: center;
+}
+
 .wrapper {
   color: green;
   display: flex;
