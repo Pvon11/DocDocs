@@ -1,13 +1,5 @@
 
 
-    <nav>
-          <a href="sign-in-page">
-            <div class="button-primary-with-icon">
-              
-                <div class="button-name" id="navbar">Log Out</div>
-              </div>
-            </a
-          ></nav>
     <div class="wrappermain">
         <div class="wrapper">
         <form class="form" id="signin-form">
@@ -18,32 +10,29 @@
                   class="input"
                   id="condition-search-name"
                   name="condition"
-                  placeholder="Enter condition here"
+                  placeholder="Enter Condition Here"
                 
                 />
           
-          <button class="button-name valign-text-middle" type="submit" id="condition-search">Search for conditions</button>
+          <button class="btn btn-primary my-1" type="submit" id="condition-search">Conditions Search</button>
         </div>
     
         </form>
 
         <form class="form" id="signin-form">
             
+          
+          
             <div class="input">
               <input 
                 
                   class="input"
                   id="condition-name"
                   name="conditions"
-                  placeholder="Conditions"
+                  placeholder="Condition Name"
                   type="text"
                 
                 />
-              </div>
-            
-          
-          
-            <div class="input">
               <input 
                 
                   class="input"
@@ -65,7 +54,7 @@
                   type="text"
                 
                 />
-              </div>
+              
             </div>
           
           
@@ -81,12 +70,14 @@
                 />
               </div>
             
-          <button class="button-name" type="submit" id="create-condition">Create Condition</button>
+          <button class="btn btn-primary my-1" type="submit" id="create-condition">Create Condition</button>
 
           {{!-- Add to patient --}}
 
           </form>
-           <form class="form" id="signin-form">
+          
+                </form>
+                 <form class="form" id="signin-form">
         
         
         <div class="input-dropdown">
@@ -96,10 +87,13 @@
           class="input"
                   id="condition-name"
                   name="condition-name"
-                  placeholder="Condition name"
+                  placeholder="Condition Name"
                   type="text"
             
             />
+            </div>
+            </div>
+
             
         <div class="input-dropdown">
           <div class="input-with-label">
@@ -108,12 +102,13 @@
           class="input"
                   id="patient-name"
                   name="patient-name"
-                  placeholder="Patient name"
+                  placeholder="Patient Name"
                   type="text"
             
             />
-              
+              </div>
+              </div>
                
-                <button class="button-name" type="submit" id="signin-form">Add to Patient</button>
+                <button class="btn btn-primary my-1" type="submit" id="signin-form">Add to Patient</button>
   </body>
 </html>

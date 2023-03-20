@@ -23,6 +23,16 @@ body {
   top: -30vh;
 }
 
+.wrapper a {
+  text-decoration: none;
+  background-color: aquamarine;
+  border: 1px 1px black;
+  padding: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 5px;
+}
+
 .content input {
   border-radius: 3px;
   padding: 3px;

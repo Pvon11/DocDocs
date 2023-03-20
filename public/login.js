@@ -1,5 +1,5 @@
-const signupForm = document.getElementById("signup-form");
-const signinForm = document.getElementById("signin-form");
+const signupForm = document.querySelector(".signup-form");
+const signinForm = document.querySelector(".signin-form");
 
 async function handleSignup(event) {
   event.preventDefault();
@@ -31,8 +31,6 @@ async function handleSignup(event) {
   } else {
     console.log("Fetch Failed");
   }
-
-  signupForm.reset();
 }
 
 async function handleLogin(event) {
@@ -62,5 +60,5 @@ async function handleLogin(event) {
   }
 }
 
-signupForm.addEventListener("submit", handleSignup);
-signinForm.addEventListener("submit", handleLogin);
+signupForm.addEventListener("click", handleSignup);
+signinForm.addEventListener("click", handleLogin);

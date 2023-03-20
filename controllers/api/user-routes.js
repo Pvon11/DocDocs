@@ -28,8 +28,12 @@ router.post("/login", async (req, res) => {
     }
 
     req.session.save(() => {
+      req.session.dbUser = dbUser;
       req.session.loggedIn = true;
-      return res.status(200).json({ message: "Welcome!" });
+      return res.send({
+        message: "Welcome!",
+        user: dbUser,
+      });
     });
   } catch (error) {
     console.log(error);
@@ -50,6 +54,14 @@ router.post("/signup", async (req, res) => {
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: "Incorrect" });
+  }
+});
+
+router.post("/logout", (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.status(404).end();
+    });
   }
 });
 
