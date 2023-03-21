@@ -35,6 +35,7 @@ async function handleSignup(event) {
 
 async function handleLogin(event) {
   event.preventDefault();
+  console.log("booooooooo");
 
   const emailValue = document.getElementById("email-signin").value.trim();
   const passwordValue = document.getElementById("password-signin").value.trim();
@@ -54,6 +55,9 @@ async function handleLogin(event) {
 
   if (response.ok) {
     console.log("Nice!");
+    console.log(response);
+    const data = await response.json();
+    console.log(data);
     document.location.replace("/homepage");
   } else {
     console.log("Fetch Failed");
@@ -61,4 +65,4 @@ async function handleLogin(event) {
 }
 
 signupForm.addEventListener("click", handleSignup);
-signinForm.addEventListener("click", handleLogin);
+signinForm.addEventListener("submit", handleLogin);

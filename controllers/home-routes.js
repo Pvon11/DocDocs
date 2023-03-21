@@ -18,15 +18,17 @@ router.get("/invoice", (req, res) => {
   res.render("billing");
 });
 router.get("/homepage", (req, res) => {
+  console.log(req.session.loggedIn);
   if (req.session.loggedIn) {
     res.render("homepage", {
       loggedIn: req.session.loggedIn,
     });
+  } else {
+    res.redirect("/error");
   }
 });
-router.get("/logout", async (req, res) => {
-  req.session.destroy();
-  res.redirect("/");
+router.get("/error", async (req, res) => {
+  res.render("error");
 });
 
 module.exports = router;
