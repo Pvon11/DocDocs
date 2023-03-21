@@ -12,24 +12,26 @@
   
 
 </head>
-<nav>
+
+<body>
+  <nav>
   <div class="navBar" id="navbar">
   {{#if loggedIn}}
   
-          <a href="/logout">
-            <div class="button-primary-with-icon">
+          
+            <div class="button-primary-with-icon logout-button">
               
                 <p class="button-name">Log Out</p>
               </div>
-            </a>
+            
             {{/if}}
             <p>DocDocs</p>
             </div>
             </nav> 
-<body>
 {{{body}}}
+{{#if loggedIn}}<script src="logout.js"></script>{{/if}}
 </body>
 
-<script src="/login.js"></script>
+
 
 </html>

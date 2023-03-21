@@ -30,7 +30,7 @@ router.post("/login", async (req, res) => {
     req.session.save(() => {
       req.session.dbUser = dbUser;
       req.session.loggedIn = true;
-      return res.send({
+      return res.json({
         message: "Welcome!",
         user: dbUser,
       });
@@ -57,11 +57,14 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-router.post("/logout", (req, res) => {
+router.post("/logout", async (req, res) => {
+  console.log(req.session.loggedIn, "lets see");
   if (req.session.loggedIn) {
     req.session.destroy(() => {
-      res.status(404).end();
+      res.status(204).end();
     });
+  } else {
+    res.status(404).end();
   }
 });
 
