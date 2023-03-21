@@ -1,4 +1,4 @@
-const logOutButton = document.querySelector(".logout-button");
+const logOutButton = document.querySelector(".button-name");
 
 async function handleLogout(event) {
   event.preventDefault();
