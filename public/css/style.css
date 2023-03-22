@@ -15,21 +15,27 @@ body {
   text-align: center;
 }
 
+.wrappermain {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+}
+
 .wrapper {
   color: darkblue;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   font-size: x-large;
   text-align: center;
-  border: 1px 1px black;
+  border: 3px solid darkblue;
+  border-radius: 5px;
+  box-shadow: 2px 2px;
   /* background-color: white; */
-  width: 400px;
-  height: 600px;
-  padding: 5px;
-  top: -30vh;
+  padding: 15px;
 }
 
 .wrapper a {
