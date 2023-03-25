@@ -1,38 +1,78 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DocDocs</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocDocs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
-</head>
+  </head>
 
-<body>
-  <nav>
-  <div class="navBar" id="navbar">
-  {{#if loggedIn}}
-  
-          
-            <div> 
-              
-                <button class="button-name" type="submit">Log Out</button>
-                {{!-- <button class="button-name" href="/homepage" type="submit">Homepage</button> --}}
-              </div>
-            
-            {{/if}}
-            
-            </div>
-            </nav> 
-{{{body}}}
-{{#if loggedIn}}<script src="logout.js"></script>{{/if}}
-</body>
+  <body>
+    <nav>
+      <div class="navBar" id="navbar">
+        {{#if loggedIn}}
 
+          <div class="nav-bar-div">
 
+            {{! <button class="button-name" type="submit">Log Out</button>
+            <a
+              id="button-name"
+              class="button-name"
+              href="/homepage"
+            >Homepage</a> }}
+
+            <button class="btn btn-secondary" type="submit" id="button-name">Log
+              Out</button>
+            <a
+              id="button-name"
+              class="btn btn-secondary"
+              href="/homepage"
+            >Homepage</a>
+            <i class="fa-regular fa-hospital fa-2xl"></i>
+          </div>
+
+        {{/if}}
+
+      </div>
+    </nav>
+    {{{body}}}
+    <footer class="text-center text-lg-start bg-light text-muted">
+
+      <div class="text-center p-4" style="background-color: #1139df;">
+        DocDocs
+        {{! <img
+          src="/img/stethoscope.png"
+          alt="error"
+          height="auto"
+          width="25px"
+        /> }}
+        <i class="fa-regular fa-hospital fa-2xl"></i>
+      </div>
+
+    </footer>
+    {{#if loggedIn}}<script src="logout.js"></script>{{/if}}
+  </body>
 
 </html>

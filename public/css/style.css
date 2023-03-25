@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: cornsilk;
+  background-color: white;
 }
 
 .title {
@@ -22,26 +22,30 @@ body {
 }
 
 .wrapper {
+  background-color: beige;
   color: darkblue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
   font-size: x-large;
   text-align: center;
   border: 3px solid darkblue;
   border-radius: 5px;
-  box-shadow: 2px 2px;
+  box-shadow: 5px 5px 5px;
   /* background-color: white; */
   padding: 15px;
+  height: 70vh;
+  width: 25vw;
 }
 
 .wrapper a {
   text-decoration: none;
-  background-color: aquamarine;
-  border: 1px 1px black;
+  color: white;
+  background-color: #1139df;
+  border: 2px 2px black;
   padding: 5px;
   margin-left: 3px;
   margin-right: 3px;
@@ -49,25 +53,67 @@ body {
   font-size: xx-large;
 }
 
+.wrapper a:hover {
+  color: #1139df;
+  background-color: white;
+}
+
 .content input {
   border-radius: 3px;
   padding: 3px;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: larger;
 }
 
 #navbar {
   display: block;
   padding: 8px;
-  background-color: darkblue;
+  background-color: #1139df;
+  height: 60px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .button-name {
+  all: unset;
   font-size: large;
+  border: solid black 1px;
+  padding: 4px;
+  background-color: white;
+  text-decoration: none;
 }
+
+/* #button-name {
+  font-size: large;
+} */
 
 .button-name:hover {
   background-color: gray;
   cursor: pointer;
   color: white;
+  text-decoration: none;
+}
+
+#button-name:hover {
+  font-size: large;
+  background-color: gray;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-bar-div i {
+  align-items: right;
+  position: absolute;
+  right: 25;
+  top: 25;
+  color: grey;
+}
+
+span {
+  scale: 1.3;
 }
