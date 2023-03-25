@@ -1,9 +1,17 @@
 const createConditionButton = document.getElementById("create-condition");
 const searchConditionButton = document.getElementById("condition-search");
+const conditionDisplay = document.getElementById("condition-data");
+
+async function renderCondition(condition) {
+  console.log(condition);
+const html = `<p>${condition[0].name}</p> 
+<p>${condition[0].description}</p>`
+conditionDisplay.insertAdjacentHTML("beforeend", html)
+};
 
 async function createCondition(event) {
-    event.preventDefault();
-    console.log("blah");
+    // event.preventDefault();
+    // console.log("blah");
   
     const conditionName = document.getElementById("condition-name").value.trim();
     const conditionDescription = document.getElementById("condition-description").value.trim();
@@ -17,6 +25,8 @@ async function createCondition(event) {
       treatments: conditionTreatments,
     };
   
+    console.log(newCondition);
+
     const response = await fetch("/api/conditions", {
       body: JSON.stringify(newCondition),
       method: "POST",
@@ -36,11 +46,11 @@ async function createCondition(event) {
 
 
   async function searchCondition(event) {
-    event.preventDefault();
-    console.log("blah");
+    // event.preventDefault();
+    
   
     const name = document.getElementById("condition-search-name").value.trim();
-    
+    console.log(name);
   
     const response = await fetch(`/api/conditions/${name}`, {
       method: "GET",
@@ -49,16 +59,27 @@ async function createCondition(event) {
       },
     });
   
-    if (response.ok) {
-      console.log("Nice!");
-    } else {
-      console.log("Fetch Failed");
-    }
-  
+    // if (response.ok) {
+      
+      
+    //   // console.log(response);
+    //   // console.log(response.body);
+    // } else {
+    //   console.log(response);
+    // }
+  if (!response.ok) {
+    const message = response.status
+    throw new Error(message)
+  }
+   const condition = await response.json();
    
+
+    renderCondition(condition)
+
   };
 
+  
  
 
-  createConditionButton.addEventListener("submit", createCondition);
-  searchConditionButton.addEventListener("submit", searchCondition);
+  createConditionButton.addEventListener("click", createCondition);
+  searchConditionButton.addEventListener("click", searchCondition);
