@@ -5,7 +5,10 @@ const medicineDisplay = document.getElementById("medication-data");
 async function renderMedicine(medicine) {
   console.log(medicine);
 const html = `<p>${medicine[0].name}</p> 
-<p>${medicine[0].description}</p>`
+<p>${medicine[0].description}</p>
+<p>${medicine[0].usage_type}</p>
+<p>${medicine[0].treatments}</p>`
+medicineDisplay.replaceChildren("")
 medicineDisplay.insertAdjacentHTML("beforeend", html)
 };
 
