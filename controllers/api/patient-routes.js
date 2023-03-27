@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Patients }= require("../../models");
+const { Patients, Condition }= require("../../models");
 const { authChecker } = require('../../utils/helpers');
 
 router.post('/', authChecker, async (req, res) => {
@@ -41,6 +41,42 @@ router.post('/', authChecker, async (req, res) => {
     }
   });
 
+
+
+  router.put('/', authChecker, async (req, res) => {
+console.log('patient-condition-route')
+    try {
+      let name = req.body.patientName;
+      let pcondition = req.body.patientCondition;
+
+      const conditionData = await Condition.findAll({
+        where: {
+          name:pcondition
+        }
+        
+      });
+
+      const condition = conditionData.map((data) => data.get({plain:true}));
+console.log(condition[0].id);
+
+      const patientData = await Patients.update({condition_id:condition[0].id}, {
+        where: {
+          name:name
+        }
+        
+      });
+
+      
+      console.log(patientData);
+
+  
+    }
+    catch  (err) {
+      res.status(400).json(err);
+    }
+
+    
+  });
 
 
 module.exports = router;
