@@ -5,7 +5,10 @@ const conditionDisplay = document.getElementById("condition-data");
 async function renderCondition(condition) {
   console.log(condition);
 const html = `<p>${condition[0].name}</p> 
-<p>${condition[0].description}</p>`
+<p>${condition[0].description}</p>
+<p>${condition[0].symptoms}</p>
+<p>${condition[0].treatments}</p>`
+conditionDisplay.replaceChildren("")
 conditionDisplay.insertAdjacentHTML("beforeend", html)
 };
 

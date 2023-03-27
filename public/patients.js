@@ -5,7 +5,9 @@ const patientDisplay = document.getElementById("patient-data");
 async function renderPatient(patient) {
   console.log(patient);
 const html = `<p>${patient[0].name}</p> 
-<p>${patient[0].dob}</p>`
+<p>${patient[0].dob}</p>
+<p>${patient[0].notes}</p>`
+patientDisplay.replaceChildren("")
 patientDisplay.insertAdjacentHTML("beforeend", html)
 };
 
