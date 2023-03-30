@@ -58,6 +58,26 @@ body {
   background-color: white;
 }
 
+.display-box {
+  background-color: beige;
+  color: darkblue;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  text-align: center;
+  border: 3px solid darkblue;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px;
+  /* background-color: white; */
+  padding: 15px;
+  /* height: 70vh;
+  width: 25vw; */
+}
+
 .content input {
   border-radius: 3px;
   padding: 3px;
