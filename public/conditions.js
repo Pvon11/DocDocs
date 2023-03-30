@@ -7,10 +7,10 @@ async function renderCondition(condition) {
   console.log(condition);
   const html = `<div class="display-box">
   <span class="material-symbols-outlined">conditions</span>
-<p>${condition[0].name}</p> 
-<p>${condition[0].description}</p>
-<p>${condition[0].symptoms}</p>
-<p>${condition[0].treatments}</p>
+<p>Name: ${condition[0].name}</p> 
+<p>Description: ${condition[0].description}</p>
+<p>Symptoms: ${condition[0].symptoms}</p>
+<p>Treatments: ${condition[0].treatments}</p>
 </div>`;
   conditionDisplay.replaceChildren("");
   conditionDisplay.insertAdjacentHTML("beforeend", html);

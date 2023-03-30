@@ -27,7 +27,7 @@ router.get('/:patientName', authChecker, async (req, res) => {
       where: {
         name: name
       },
-      include: [{ model: Condition, attributes: ['id', 'name']}]
+      include: [Condition]
     });
     const patient = patientData.map((data) => data.get({ plain: true }));
     console.log('patient data is', patient);

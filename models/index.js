@@ -11,7 +11,7 @@ Patients.hasMany(Medications, {
   foreignKey: "medication_id",
 });
 
-Patients.hasMany(Condition, {
+Condition.hasMany(Patients, {
   foreignKey: "condition_id",
 });
 
@@ -20,7 +20,7 @@ Medications.belongsTo(Patients, {
   foreignKey: "medication_id",
 });
 
-Condition.belongsTo(Patients, {
+Patients.belongsTo(Condition, {
   foreignKey: "condition_id",
 });
 
