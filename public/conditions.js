@@ -1,10 +1,12 @@
 const createConditionButton = document.getElementById("create-condition");
 const searchConditionButton = document.getElementById("condition-search");
 const conditionDisplay = document.getElementById("condition-data");
+const alertDiv = document.getElementById("alert");
 
 async function renderCondition(condition) {
   console.log(condition);
   const html = `<div class="display-box">
+  <span class="material-symbols-outlined">conditions</span>
 <p>${condition[0].name}</p> 
 <p>${condition[0].description}</p>
 <p>${condition[0].symptoms}</p>
@@ -15,9 +17,6 @@ async function renderCondition(condition) {
 }
 
 async function createCondition(event) {
-  // event.preventDefault();
-  // console.log("blah");
-
   const conditionName = document.getElementById("condition-name").value.trim();
   const conditionDescription = document
     .getElementById("condition-description")
@@ -57,7 +56,8 @@ async function searchCondition(event) {
   // event.preventDefault();
 
   const name = document.getElementById("condition-search-name").value.trim();
-  console.log(name);
+
+  if (!name) alertDiv.innerText = "Please type in a name";
 
   const response = await fetch(`/api/conditions/${name}`, {
     method: "GET",
@@ -78,6 +78,7 @@ async function searchCondition(event) {
     throw new Error(message);
   }
   const condition = await response.json();
+  alertDiv.innerText = "";
 
   renderCondition(condition);
 }

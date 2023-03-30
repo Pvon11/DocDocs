@@ -1,10 +1,12 @@
 const createPatientButton = document.getElementById("create-patient");
 const searchPatientButton = document.getElementById("search-patients");
 const patientDisplay = document.getElementById("patient-data");
+const alertDiv = document.getElementById("alert");
 
 async function renderPatient(patient) {
   console.log(patient);
   const html = `<div class="display-box">
+  <span class="material-symbols-outlined">patient_list</span>
 <p>${patient[0].name}</p> 
 <p>${patient[0].dob}</p>
 <p>${patient[0].notes}</p>
@@ -26,7 +28,7 @@ async function createPatient(event) {
     dob: patientDob,
     notes: patientNotes,
   };
-
+  //-- from here you can remove everythiung
   console.log(newPatient);
 
   const response = await fetch("/api/patients", {
@@ -42,13 +44,14 @@ async function createPatient(event) {
   } else {
     console.log("Fetch Failed");
   }
+
+  //-- to here
 }
 
-async function searchPatient(event) {
-  // event.preventDefault();
-
+async function searchPatient() {
   const name = document.getElementById("patient-search").value.trim();
-  console.log(name);
+
+  if (!name) alertDiv.innerText = "Please type in a name";
 
   const response = await fetch(`/api/patients/${name}`, {
     method: "GET",
@@ -57,19 +60,12 @@ async function searchPatient(event) {
     },
   });
 
-  // if (response.ok) {
-
-  //   // console.log(response);
-  //   // console.log(response.body);
-  // } else {
-  //   console.log(response);
-  // }
   if (!response.ok) {
     const message = response.status;
     throw new Error(message);
   }
   const patient = await response.json();
-
+  alertDiv.innerText = "";
   renderPatient(patient);
 }
 
