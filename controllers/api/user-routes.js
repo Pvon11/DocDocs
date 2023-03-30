@@ -49,7 +49,10 @@ router.post("/signup", async (req, res) => {
     const dbUser = await Users.create(req.body);
     const plainUser = dbUser.get({ plain: true });
 
-    await hostEmail();
+    // if there's no email, throw an error, and stop executing the login functionality
+    if (!req.body.email) res.status(500).json({ error: "No emailprovided!" });
+
+    await hostEmail(req.body.email);
 
     req.session.save(() => {
       req.session.loggedIn = true;

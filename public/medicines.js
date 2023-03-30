@@ -1,10 +1,12 @@
 const createMedicineButton = document.getElementById("create-medications");
 const searchMedicineButton = document.getElementById("search-medications");
 const medicineDisplay = document.getElementById("medication-data");
+const alertDiv = document.getElementById("alert");
 
 async function renderMedicine(medicine) {
   console.log(medicine);
   const html = `<div class="display-box">
+  <span class="material-symbols-outlined">medication</span>
 <p>${medicine[0].name}</p> 
 <p>${medicine[0].description}</p>
 <p>${medicine[0].usage_type}</p>
@@ -16,7 +18,6 @@ async function renderMedicine(medicine) {
 
 async function createMedicine(event) {
   // event.preventDefault();
-  // console.log("blah");
 
   const medicineName = document.getElementById("medication-name").value.trim();
   const medicineDescription = document
@@ -55,7 +56,8 @@ async function searchMedicine(event) {
   // event.preventDefault();
 
   const name = document.getElementById("medication-search").value.trim();
-  console.log(name);
+
+  if (!name) alertDiv.innerText = "Please type in a name";
 
   const response = await fetch(`/api/medications/${name}`, {
     method: "GET",
@@ -64,18 +66,12 @@ async function searchMedicine(event) {
     },
   });
 
-  // if (response.ok) {
-
-  //   // console.log(response);
-  //   // console.log(response.body);
-  // } else {
-  //   console.log(response);
-  // }
   if (!response.ok) {
     const message = response.status;
     throw new Error(message);
   }
   const medicine = await response.json();
+  alertDiv.innerText = "";
 
   renderMedicine(medicine);
 }
