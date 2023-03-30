@@ -7,9 +7,9 @@ async function renderPatient(patient) {
   console.log(patient);
   const html = `<div class="display-box">
   <span class="material-symbols-outlined">patient_list</span>
-<p>${patient[0].name}</p> 
-<p>${patient[0].dob}</p>
-<p>${patient[0].notes}</p>
+<p>Name: ${patient[0].name}</p> 
+<p>DOB: ${patient[0].dob}</p>
+<p>Notes: ${patient[0].notes}</p>
 </div>`;
   patientDisplay.replaceChildren("");
   patientDisplay.insertAdjacentHTML("beforeend", html);

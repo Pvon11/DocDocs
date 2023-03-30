@@ -7,10 +7,10 @@ async function renderMedicine(medicine) {
   console.log(medicine);
   const html = `<div class="display-box">
   <span class="material-symbols-outlined">medication</span>
-<p>${medicine[0].name}</p> 
-<p>${medicine[0].description}</p>
-<p>${medicine[0].usage_type}</p>
-<p>${medicine[0].treatments}</p>
+<p>Name: ${medicine[0].name}</p> 
+<p>Description: ${medicine[0].description}</p>
+<p>Usage: ${medicine[0].usage_type}</p>
+<p>Treats: ${medicine[0].treatments}</p>
 </div>`;
   medicineDisplay.replaceChildren("");
   medicineDisplay.insertAdjacentHTML("beforeend", html);
