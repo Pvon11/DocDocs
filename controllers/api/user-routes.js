@@ -8,6 +8,7 @@
 const router = require("express").Router();
 
 const { Users } = require("../../models");
+const hostEmail = require("../../utils/app");
 
 router.post("/login", async (req, res) => {
   try {
@@ -26,6 +27,7 @@ router.post("/login", async (req, res) => {
     if (!isValidPassword) {
       return res.status(404).json({ message: "Wrong password" });
     }
+    // await hostEmail();
 
     req.session.save(() => {
       req.session.dbUser = dbUser;
@@ -46,6 +48,8 @@ router.post("/signup", async (req, res) => {
   try {
     const dbUser = await Users.create(req.body);
     const plainUser = dbUser.get({ plain: true });
+
+    await hostEmail();
 
     req.session.save(() => {
       req.session.loggedIn = true;
