@@ -32,7 +32,7 @@ with usage information. a very useful and efficent tool to keep great track of y
 
 ## Link
 
-[Heroku Deployed App](https://obscure-falls-81911.herokuapp.com/)
+[Heroku Deployed App](https://intelligent-bastille-94774-2d7aa4f639d1.herokuapp.com/)
 
 ## Contribution
 
